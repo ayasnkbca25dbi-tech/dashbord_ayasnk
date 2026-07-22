@@ -4,7 +4,7 @@ import numpy as np
 import plotly.express as px
 @st.cache_data
 def load_data():
-    return pd.read_csv("novamart_clean.csv")
+    return pd.read_csv("data/gitnovamart_clean.csv")
 
 df = load_data()
 st.title("NovaMart Dashboard - Ayas nk")
