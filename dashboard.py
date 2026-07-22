@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import plotly.express as px
+
 @st.cache_data
 def load_data():
     return pd.read_csv("data/gitnovamart_clean.csv")
