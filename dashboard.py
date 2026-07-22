@@ -2,10 +2,13 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import plotly.express as px
+from pathlib import Path
+
 
 @st.cache_data
 def load_data():
-    return pd.read_csv("data/novamart_clean.csv")
+    file_path = Path(__file__).parent / "data" / "novamart_clean.csv"
+    return pd.read_csv(file_path)
 
 df = load_data()
 st.title("NovaMart Dashboard - Ayas nk")
